@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en-us"><head>
+<script>/*__iframeClickFocus*/(function(){["pointerdown","mousedown","touchstart"].forEach(function(e){addEventListener(e,function(){try{window.focus()}catch(x){}},true)});var P=window.CanvasRenderingContext2D&&CanvasRenderingContext2D.prototype,re=/BREADBB|gn-math/i,w=/^\s*(PORT|BY|PORT BY)\s*$/i;P&&["fillText","strokeText"].forEach(function(k){var o=P[k];P[k]=function(t){t=String(t);if(re.test(t)||(w.test(t)&&/^#ff0000$/i.test(this[k=="fillText"?"fillStyle":"strokeStyle"])))return;return o.apply(this,arguments)}})})();</script>
+<script>try{Object.defineProperty(document,"referrer",{value:location.href,configurable:true});}catch(e){}</script>
+<script>
+/* __offlineNetGuard — auto-patched: chan request toi ad/analytics ke ca khi chung nam trong wasm */
+(function () {
+  var HOSTS = ["google-analytics.com","www.google-analytics.com","googletagmanager.com","www.googletagmanager.com","doubleclick.net","cm.g.doubleclick.net","securepubads.g.doubleclick.net","pagead2.googlesyndication.com","imasdk.googleapis.com","s0.2mdn.net","adtrafficquality.google","ep2.adtrafficquality.google","firestore.googleapis.com","config.uca.cloud.unity3d.com","cdp.cloud.unity3d.com","connect.facebook.net","analytics.facebook.com","c.amazon-adsystem.com","config.aps.amazon-adsystem.com","amplitude.com","api.amplitude.com","mixpanel.com","api.mixpanel.com","hotjar.com","script.hotjar.com","clarity.ms","c.clarity.ms","f.clarity.ms","sentry.io","browser.sentry-cdn.com","analytics.tiktok.com","static.cloudflareinsights.com","adinplay.com","api.adinplay.com","mc.yandex.ru","mc.yandex.com","an.yandex.ru","a.poki-cdn.com","devs-api.poki.com","geo.poki.io","api.poki.com","fafvertizing.crazygames.com","mafvertizing.crazygames.com","criteo.com","static.criteo.net","gum.criteo.com","rubiconproject.com","fastlane.rubiconproject.com","3lift.com","tlx.3lift.com","openx.net","openxcdn.net","oa.openxcdn.net","adnxs.com","ib.adnxs.com","pubmatic.com","hb.pubmatic.com","taboola.com","trc.taboola.com","outbrain.com","media.net","contextual.media.net","hadron.ad.gt","id.hadron.ad.gt","ats-wrapper.privacymanager.io","invstatic101.creativecdn.com","qsearch-a.akamaihd.net","cdn.ampproject.org","creativecdn.com","m.igroutka.ru","gameanalytics.com","api.gameanalytics.com","unityads.unity3d.com","auction.unityads.unity3d.com","cdn.unityads.unity3d.com","publisher-config.unityads.unity3d.com","stats.unity3d.com","perf-events.cloud.unity3d.com","adservice.google.com","pagead2.googleadservices.com","leveldata.poki.io","t.poki.io","auds.poki.io","dialog.poki.io","itch.io","static.itch.io","playfabapi.com","logs-01.loggly.com"];
+  function blocked(u) {
+    if (u === "" || u == null) return true; // URL rỗng (đã gỡ địa chỉ analytics) → không gửi gì
+    try {
+      var h = new URL(String(u), location.href).hostname.toLowerCase();
+      for (var i = 0; i < HOSTS.length; i++) {
+        var b = HOSTS[i];
+        if (h === b || h.endsWith("." + b)) return true;
+      }
+    } catch (e) {}
+    return false;
+  }
+  var _fetch = window.fetch;
+  if (_fetch) window.fetch = function (input, init) {
+    var u = (input && input.url) || input;
+    if (blocked(u)) return Promise.resolve(new Response(null, { status: 204, statusText: "blocked-offline" }));
+    return _fetch.apply(this, arguments);
+  };
+  var _open = XMLHttpRequest.prototype.open;
+  XMLHttpRequest.prototype.open = function (m, u) { this.__blk = blocked(u); return _open.apply(this, arguments); };
+  var _send = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.send = function () {
+    if (this.__blk) {
+      var self = this;
+      setTimeout(function () {
+        try {
+          Object.defineProperty(self, "readyState", { value: 4, configurable: true });
+          Object.defineProperty(self, "status", { value: 204, configurable: true });
+          Object.defineProperty(self, "responseText", { value: "", configurable: true });
+          self.onreadystatechange && self.onreadystatechange();
+          self.onload && self.onload();
+        } catch (e) {}
+      }, 0);
+      return;
+    }
+    return _send.apply(this, arguments);
+  };
+  if (navigator.sendBeacon) {
+    var _b = navigator.sendBeacon.bind(navigator);
+    navigator.sendBeacon = function (u) { return blocked(u) ? true : _b.apply(null, arguments); };
+  }
+  var _WS = window.WebSocket;
+  if (_WS) {
+    window.WebSocket = function (u, pr) {
+      if (blocked(u)) { try { return new _WS("ws://localhost:1"); } catch (e) {} }
+      return pr === undefined ? new _WS(u) : new _WS(u, pr);
+    };
+    // giữ WebSocket.OPEN/CONNECTING... + prototype: game so readyState == WebSocket.OPEN (Nugget Royale không gửi được gì)
+    window.WebSocket.prototype = _WS.prototype;
+    window.WebSocket.CONNECTING = 0; window.WebSocket.OPEN = 1; window.WebSocket.CLOSING = 2; window.WebSocket.CLOSED = 3;
+  }
+})();
+</script>
+    <!-- Content encoding -->
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=yes">
+
+    <!-- Page info and stylesheets -->
+    <title>War The Knights Battle Arena Swords 3D</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+
+</head>
+<body>
+    <!-- Unity canvas -->
+    <div id="unity-container">
+        <canvas id="unity-canvas" tabindex="-1"></canvas>
+        <div id="unity-loading-bar">
+            <div id="unity-logo"></div>
+            <div id="unity-progress-bar-empty">
+                <div id="unity-progress-bar-full"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Unity loader script -->
+    <script src="unityApp.js"></script>
+
+
+</body></html>
